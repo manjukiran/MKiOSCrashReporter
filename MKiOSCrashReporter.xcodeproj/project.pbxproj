@@ -6,29 +6,45 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C21D11811A97835E001653C7 /* MKCrashReporter_i386 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C21D11821A97835E001653C7 /* Build configuration list for PBXAggregateTarget "MKCrashReporter_i386" */;
+			buildPhases = (
+				C21D11871A9783B4001653C7 /* ShellScript */,
+			);
+			dependencies = (
+				C21D11861A978363001653C7 /* PBXTargetDependency */,
+			);
+			name = MKCrashReporter_i386;
+			productName = MKCrashReporter_i386;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		C21D116B1A977E41001653C7 /* MKCrashReporterHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C21D11691A977E41001653C7 /* MKCrashReporterHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C21D116C1A977E41001653C7 /* MKCrashReporterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C21D116A1A977E41001653C7 /* MKCrashReporterHelper.m */; };
+		C21D11801A978298001653C7 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D117F1A978298001653C7 /* CrashReporter.framework */; };
 		C2EB24D81A977D9F002A5868 /* MKCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EB24D71A977D9F002A5868 /* MKCrashReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2EB24DE1A977D9F002A5868 /* MKCrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EB24D21A977D9F002A5868 /* MKCrashReporter.framework */; };
-		C2EB24E51A977D9F002A5868 /* MKCrashReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB24E41A977D9F002A5868 /* MKCrashReporterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2EB24DF1A977D9F002A5868 /* PBXContainerItemProxy */ = {
+		C21D11851A978363001653C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2EB24C91A977D9E002A5868 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C2EB24D11A977D9E002A5868;
-			remoteInfo = MKCrashReporter;
+			remoteInfo = MKiOSCrashReporter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C2EB24D21A977D9F002A5868 /* MKCrashReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKCrashReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21D11691A977E41001653C7 /* MKCrashReporterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCrashReporterHelper.h; sourceTree = "<group>"; };
+		C21D116A1A977E41001653C7 /* MKCrashReporterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCrashReporterHelper.m; sourceTree = "<group>"; };
+		C21D117F1A978298001653C7 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
+		C2EB24D21A977D9F002A5868 /* MKiOSCrashReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKiOSCrashReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EB24D61A977D9F002A5868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2EB24D71A977D9F002A5868 /* MKCrashReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKCrashReporter.h; sourceTree = "<group>"; };
-		C2EB24DD1A977D9F002A5868 /* MKCrashReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKCrashReporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2EB24E31A977D9F002A5868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2EB24E41A977D9F002A5868 /* MKCrashReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKCrashReporterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,25 +52,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2EB24DA1A977D9F002A5868 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2EB24DE1A977D9F002A5868 /* MKCrashReporter.framework in Frameworks */,
+				C21D11801A978298001653C7 /* CrashReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C21D117D1A978298001653C7 /* 3rd Party Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C21D117E1A978298001653C7 /* PLCrashReporterFramework */,
+			);
+			path = "3rd Party Frameworks";
+			sourceTree = "<group>";
+		};
+		C21D117E1A978298001653C7 /* PLCrashReporterFramework */ = {
+			isa = PBXGroup;
+			children = (
+				C21D117F1A978298001653C7 /* CrashReporter.framework */,
+			);
+			path = PLCrashReporterFramework;
+			sourceTree = "<group>";
+		};
 		C2EB24C81A977D9E002A5868 = {
 			isa = PBXGroup;
 			children = (
 				C2EB24D41A977D9F002A5868 /* MKCrashReporter */,
-				C2EB24E11A977D9F002A5868 /* MKCrashReporterTests */,
 				C2EB24D31A977D9F002A5868 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,8 +86,7 @@
 		C2EB24D31A977D9F002A5868 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2EB24D21A977D9F002A5868 /* MKCrashReporter.framework */,
-				C2EB24DD1A977D9F002A5868 /* MKCrashReporterTests.xctest */,
+				C2EB24D21A977D9F002A5868 /* MKiOSCrashReporter.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				C2EB24D71A977D9F002A5868 /* MKCrashReporter.h */,
+				C21D11691A977E41001653C7 /* MKCrashReporterHelper.h */,
+				C21D116A1A977E41001653C7 /* MKCrashReporterHelper.m */,
+				C21D117D1A978298001653C7 /* 3rd Party Frameworks */,
 				C2EB24D51A977D9F002A5868 /* Supporting Files */,
 			);
 			path = MKCrashReporter;
@@ -85,23 +111,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C2EB24E11A977D9F002A5868 /* MKCrashReporterTests */ = {
-			isa = PBXGroup;
-			children = (
-				C2EB24E41A977D9F002A5868 /* MKCrashReporterTests.m */,
-				C2EB24E21A977D9F002A5868 /* Supporting Files */,
-			);
-			path = MKCrashReporterTests;
-			sourceTree = "<group>";
-		};
-		C2EB24E21A977D9F002A5868 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2EB24E31A977D9F002A5868 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -110,15 +119,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2EB24D81A977D9F002A5868 /* MKCrashReporter.h in Headers */,
+				C21D116B1A977E41001653C7 /* MKCrashReporterHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C2EB24D11A977D9E002A5868 /* MKCrashReporter */ = {
+		C2EB24D11A977D9E002A5868 /* MKiOSCrashReporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2EB24E81A977D9F002A5868 /* Build configuration list for PBXNativeTarget "MKCrashReporter" */;
+			buildConfigurationList = C2EB24E81A977D9F002A5868 /* Build configuration list for PBXNativeTarget "MKiOSCrashReporter" */;
 			buildPhases = (
 				C2EB24CD1A977D9E002A5868 /* Sources */,
 				C2EB24CE1A977D9E002A5868 /* Frameworks */,
@@ -129,28 +139,10 @@
 			);
 			dependencies = (
 			);
-			name = MKCrashReporter;
+			name = MKiOSCrashReporter;
 			productName = MKCrashReporter;
-			productReference = C2EB24D21A977D9F002A5868 /* MKCrashReporter.framework */;
+			productReference = C2EB24D21A977D9F002A5868 /* MKiOSCrashReporter.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		C2EB24DC1A977D9F002A5868 /* MKCrashReporterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C2EB24EB1A977D9F002A5868 /* Build configuration list for PBXNativeTarget "MKCrashReporterTests" */;
-			buildPhases = (
-				C2EB24D91A977D9F002A5868 /* Sources */,
-				C2EB24DA1A977D9F002A5868 /* Frameworks */,
-				C2EB24DB1A977D9F002A5868 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C2EB24E01A977D9F002A5868 /* PBXTargetDependency */,
-			);
-			name = MKCrashReporterTests;
-			productName = MKCrashReporterTests;
-			productReference = C2EB24DD1A977D9F002A5868 /* MKCrashReporterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,15 +153,15 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Manju Kiran";
 				TargetAttributes = {
-					C2EB24D11A977D9E002A5868 = {
+					C21D11811A97835E001653C7 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					C2EB24DC1A977D9F002A5868 = {
+					C2EB24D11A977D9E002A5868 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = C2EB24CC1A977D9E002A5868 /* Build configuration list for PBXProject "MKCrashReporter" */;
+			buildConfigurationList = C2EB24CC1A977D9E002A5868 /* Build configuration list for PBXProject "MKiOSCrashReporter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +173,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2EB24D11A977D9E002A5868 /* MKCrashReporter */,
-				C2EB24DC1A977D9F002A5868 /* MKCrashReporterTests */,
+				C2EB24D11A977D9E002A5868 /* MKiOSCrashReporter */,
+				C21D11811A97835E001653C7 /* MKCrashReporter_i386 */,
 			);
 		};
 /* End PBXProject section */
@@ -195,42 +187,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2EB24DB1A977D9F002A5868 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C21D11871A9783B4001653C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is based on Jacob Van Order's answer on apple dev forums https://devforums.apple.com/message/971277\n# See also http://spin.atomicobject.com/2011/12/13/building-a-universal-framework-for-ios/ for the start\n\n\n# To get this to work with a Xcode 6 Cocoa Touch Framework, create Framework\n# Then create a new Aggregate Target. Throw this script into a Build Script Phrase on the Aggregate\n\n\n######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator | echo\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make fat universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n\n######################\n# On Release, copy the result to desktop folder\n######################\n\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\nmkdir \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\ncp -r \"${FRAMEWORK}\" \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\nfi\n\n\n######################\n# If needed, open the Framework folder\n######################\n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\nopen \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\nelse\nopen \"${UNIVERSAL_LIBRARY_DIR}/\"\nfi\nfi\n\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2EB24CD1A977D9E002A5868 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2EB24D91A977D9F002A5868 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2EB24E51A977D9F002A5868 /* MKCrashReporterTests.m in Sources */,
+				C21D116C1A977E41001653C7 /* MKCrashReporterHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2EB24E01A977D9F002A5868 /* PBXTargetDependency */ = {
+		C21D11861A978363001653C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C2EB24D11A977D9E002A5868 /* MKCrashReporter */;
-			targetProxy = C2EB24DF1A977D9F002A5868 /* PBXContainerItemProxy */;
+			target = C2EB24D11A977D9E002A5868 /* MKiOSCrashReporter */;
+			targetProxy = C21D11851A978363001653C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C21D11831A97835E001653C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s armv6 i386";
+			};
+			name = Debug;
+		};
+		C21D11841A97835E001653C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s armv6 i386";
+			};
+			name = Release;
+		};
 		C2EB24E61A977D9F002A5868 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,11 +333,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MKCrashReporter/3rd",
+					Party,
+					Frameworks/PLCrashReporterFramework,
+				);
 				INFOPLIST_FILE = MKCrashReporter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MKiOSCrashReporter;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
 			};
 			name = Debug;
 		};
@@ -337,48 +355,33 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MKCrashReporter/3rd",
+					Party,
+					Frameworks/PLCrashReporterFramework,
+				);
 				INFOPLIST_FILE = MKCrashReporter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MKiOSCrashReporter;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C2EB24EC1A977D9F002A5868 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MKCrashReporterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C2EB24ED1A977D9F002A5868 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MKCrashReporterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2EB24CC1A977D9E002A5868 /* Build configuration list for PBXProject "MKCrashReporter" */ = {
+		C21D11821A97835E001653C7 /* Build configuration list for PBXAggregateTarget "MKCrashReporter_i386" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21D11831A97835E001653C7 /* Debug */,
+				C21D11841A97835E001653C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C2EB24CC1A977D9E002A5868 /* Build configuration list for PBXProject "MKiOSCrashReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2EB24E61A977D9F002A5868 /* Debug */,
@@ -387,21 +390,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2EB24E81A977D9F002A5868 /* Build configuration list for PBXNativeTarget "MKCrashReporter" */ = {
+		C2EB24E81A977D9F002A5868 /* Build configuration list for PBXNativeTarget "MKiOSCrashReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2EB24E91A977D9F002A5868 /* Debug */,
 				C2EB24EA1A977D9F002A5868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		C2EB24EB1A977D9F002A5868 /* Build configuration list for PBXNativeTarget "MKCrashReporterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C2EB24EC1A977D9F002A5868 /* Debug */,
-				C2EB24ED1A977D9F002A5868 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C2EB24D11A977D9E002A5868"
-               BuildableName = "MKCrashReporter.framework"
-               BlueprintName = "MKCrashReporter"
-               ReferencedContainer = "container:MKCrashReporter.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2EB24DC1A977D9F002A5868"
-               BuildableName = "MKCrashReporterTests.xctest"
-               BlueprintName = "MKCrashReporterTests"
-               ReferencedContainer = "container:MKCrashReporter.xcodeproj">
+               BuildableName = "MKiOSCrashReporter.framework"
+               BlueprintName = "MKiOSCrashReporter"
+               ReferencedContainer = "container:MKiOSCrashReporter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2EB24DC1A977D9F002A5868"
-               BuildableName = "MKCrashReporterTests.xctest"
-               BlueprintName = "MKCrashReporterTests"
-               ReferencedContainer = "container:MKCrashReporter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2EB24D11A977D9E002A5868"
-            BuildableName = "MKCrashReporter.framework"
-            BlueprintName = "MKCrashReporter"
-            ReferencedContainer = "container:MKCrashReporter.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -76,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2EB24D11A977D9E002A5868"
-            BuildableName = "MKCrashReporter.framework"
-            BlueprintName = "MKCrashReporter"
-            ReferencedContainer = "container:MKCrashReporter.xcodeproj">
+            BuildableName = "MKiOSCrashReporter.framework"
+            BlueprintName = "MKiOSCrashReporter"
+            ReferencedContainer = "container:MKiOSCrashReporter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2EB24D11A977D9E002A5868"
-            BuildableName = "MKCrashReporter.framework"
-            BlueprintName = "MKCrashReporter"
-            ReferencedContainer = "container:MKCrashReporter.xcodeproj">
+            BuildableName = "MKiOSCrashReporter.framework"
+            BlueprintName = "MKiOSCrashReporter"
+            ReferencedContainer = "container:MKiOSCrashReporter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
