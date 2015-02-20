@@ -21,10 +21,10 @@ Massive Thanks to Stuart Clark for introducing me to this framework and for the 
  
  Step 3 : Call the following method in your AppDelegate.m's "didFinishLaunchingWithOptions" method
  
- [MKCrashReporterHelper  initCrashReporterWithReportingURL:reportingURLString
- forDeviceUUID:(NSString*)deviceUUID //Ideally you will link this with a user
- reportingKey:(NSString*)key
- additionalData:(NSDictionary*)additionalData;
+    [MKCrashReporterHelper  initCrashReporterWithReportingURL:reportingURLString
+                                              forDeviceUUID:(NSString*)deviceUUID //Ideally you will link this with a user
+                                               reportingKey:(NSString*)key
+                                             additionalData:(NSDictionary*)additionalData;
  
 ### Thats all folks. Sit back and watch the magic unfold (unless you dont have a backend that is going to receive this data; in such case please refer to the data being uploaded section of this document to see the various values being submitted in the POST data
  
