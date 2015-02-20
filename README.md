@@ -62,7 +62,7 @@ Massive Thanks to Stuart Clark for introducing me to this framework and for the 
   
   **"signalInfo_address"**       : Crash Signal Memory Address
   
-  **"crashReportedDate **        : Date when the crash was reported
+  **"crashReportedDate"**        : Date when the crash was reported
   
  
   Any additional data can be supplied when the framework is being initialized in the didFinishLaunchingWithOptions method in 
