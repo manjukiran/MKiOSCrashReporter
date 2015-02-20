@@ -30,24 +30,40 @@ Massive Thanks to Stuart Clark for introducing me to this framework and for the 
  
 
  
-## Post Data:
+## Post Data
  
- "deviceUUID"               : Remote Notification UUID of the device to link user to device
- "crashDate"                : Date of Crash
- "appTitle"                 : Title of App (if you are using the same backend for multiple apps)
- "appVersion"               : Version of App
- "appBuild"                 : Build version of the app
- "deviceModel"              : Model of the device
- "deviceLocalizedModel"     : Localized Description of the device model
- "deviceName"               : Name of Device
- "systemVersion"            : iOS Version
- "batteryLevel"             : Level of Battery
- "devicePlatform"           : Description of the device model
- "crashLog"                 : CrashLog captured by PLCrashReporter : Its better to write this Log to a file on your server and store the location of file in DB
- "signalInfo_name"          : Crash Signal Name
- "signalInfo_code"          : Crash Signal Code
- "signalInfo_address"       : Crash Signal Memory Address
- "crashReportedDate         : Date when the crash was reported
+  **"deviceUUID"**               : Remote Notification UUID of the device to link user to device  
+  
+  **"crashDate"**                : Date of Crash  
+  
+  **"appTitle"**                 : Title of App (if you are using the same backend for multiple apps)
+  
+  **"appVersion"**               : Version of App
+  
+  **"appBuild"**                 : Build version of the app
+  
+  **"deviceModel"**              : Model of the device
+  
+  **"deviceLocalizedModel"**     : Localized Description of the device model
+  
+  **"deviceName"**               : Name of Device
+  
+  **"systemVersion"**            : iOS Version
+  
+  **"batteryLevel"**             : Level of Battery
+  
+  **"devicePlatform"**           : Description of the device model
+  
+  **"crashLog"**                 : CrashLog captured by PLCrashReporter : Its better to write this Log to a file on your server and store the location of file in DB
+  
+  **"signalInfo_name"**          : Crash Signal Name
+  
+  **"signalInfo_code"**          : Crash Signal Code
+  
+  **"signalInfo_address"**       : Crash Signal Memory Address
+  
+  **"crashReportedDate **        : Date when the crash was reported
+  
  
   Any additional data can be supplied when the framework is being initialized in the didFinishLaunchingWithOptions method in 
  "additionalData" NSDictionary
